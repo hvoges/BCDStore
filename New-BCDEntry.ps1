@@ -51,7 +51,7 @@
         ValueFromPipelineByPropertyName = $true
     )]
     [ValidatePattern('^([C-Zc-z]:?)$')]
-    [String]$OSDriveLetter,    
+    [String]$OSDriveLetter,
   
     # Description for the bootmenu
     [Parameter()]
