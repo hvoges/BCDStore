@@ -21,6 +21,7 @@
 . $PSScriptRoot\Set-BCDDefaultOS.ps1
 . $PSScriptRoot\Set-BcdEntry.ps1
 . $PSScriptRoot\Show-BCDWellKnownGuids.ps1
-. $PSScriptRoot\Test-BCDWinPE.ps1
+. $PSScriptRoot\Test-BCDWinPE.ps
+. $PSScriptRoot\Get-FilePathFromBCDEntry.ps1
 
 Export-ModuleMember -Function * -Alias Add-BcdEntry

@@ -154,7 +154,7 @@
                   $null = bcdedit.exe /set $NewBcdGuid detecthal yes 
                 }
         'detectHal' { $null = bcdedit.exe /set $NewBcdGuid detecthal yes } 
-        'LegacyBootMenu' { $null = bcdedit.exe /set $NewBcdGuid booStmenupolicy Legacy }
+        'LegacyBootMenu' { $null = bcdedit.exe /set $NewBcdGuid bootmenupolicy Legacy }
         'MakeDefault' { $null = bcdedit.exe /default $NewBcdGuid }
       }
     }
