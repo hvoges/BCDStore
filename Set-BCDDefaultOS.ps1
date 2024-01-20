@@ -30,7 +30,7 @@
     [Alias('Bezeichner','GUID')]
     [GUID]$Identifier,
     
-    [Parameter(ParametersetName='GUI','Identifier')]
+    [Parameter(ParametersetName='GUI')]
     [Switch]$ShowGui
   )
 
