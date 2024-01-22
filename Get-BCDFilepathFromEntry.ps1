@@ -1,4 +1,4 @@
-Function Get-FilepathFromBCDEntry {
+Function Get-BCDFilepathFromEntry {
 <#
 .SYNOPSIS
     Extracts the file path from a Windows Boot Configuration Data (BCD) entry.
@@ -31,14 +31,13 @@ Function Get-FilepathFromBCDEntry {
 #>
     Param( 
         [Parameter(mandatory,
-                   ValueFromPipeline,
-                   ValueFromPipelineByPropertyName)]
+                   ValueFromPipeline)]
         [Alias('Device')]
         [String]$DeviceString
     )
 
 Process {
-    $RegExImageFile = "^device\s+vhd=\[(?<Driveletter>\w\:)\](?<Path>.*),"
+    $RegExImageFile = "vhd=\[(?<Driveletter>\w\:)\](?<Path>.*),"
     If ( $DeviceString -match $RegExImageFile ) {
         Return $Matches.Driveletter + $Matches.Path
     }
