@@ -10,7 +10,6 @@
 
 . $PSScriptRoot\Backup-BCDStore.ps1
 . $PSScriptRoot\Copy-BcdEntry.ps1
-. $PSScriptRoot\Get-BCDCurrentOSGuid.ps1
 . $PSScriptRoot\Get-BCDEntry.ps1
 . $PSScriptRoot\Get-BCDFirmWareType.ps1
 . $PSScriptRoot\Get-BCDLanguage.ps1
@@ -21,7 +20,7 @@
 . $PSScriptRoot\Set-BCDDefaultOS.ps1
 . $PSScriptRoot\Set-BcdEntry.ps1
 . $PSScriptRoot\Show-BCDWellKnownGuids.ps1
-. $PSScriptRoot\Test-BCDWinPE.ps
-. $PSScriptRoot\Get-FilePathFromBCDEntry.ps1
+. $PSScriptRoot\Test-BCDWinPE.ps1
+. $PSScriptRoot\Get-BCDFilePathFromEntry.ps1
 
 Export-ModuleMember -Function * -Alias Add-BcdEntry
