@@ -38,7 +38,7 @@ Function Get-FilepathFromBCDEntry {
     )
 
 Process {
-    $RegExImageFile = "vhd=\[(?<Driveletter>\w\:)\](?<Path>.*),"
+    $RegExImageFile = "device\s+vhd=\[(?<Driveletter>\w\:)\](?<Path>.*),"
     If ( $DeviceString -match $RegExImageFile ) {
         Return $Matches.Driveletter + $Matches.Path
     }
